@@ -1,12 +1,13 @@
 import React from 'react'
 import logo from './assets/logo.svg'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 const Navbar = () => {
   return (
     <Wrapper>
-      <div class='nav-header'>
-        <img src='./assets/logo.svg' alt='logo' />
-        <a href='index.html'>Home</a>
+      <div className='nav-header'>
+        <img src={logo} alt='logo' />
+        <Link to='/'>Home</Link>
       </div>
     </Wrapper>
   )
@@ -17,7 +18,7 @@ const Wrapper = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--clr-primary-5);
+  background: var(--primary-500);
 
   .nav-header {
     width: 90vw;
@@ -31,8 +32,9 @@ const Wrapper = styled.nav`
   }
   .nav-header a {
     display: block;
+    margin-top: 0.75rem;
     letter-spacing: var(--spacing);
-    color: var(--clr-white);
+    color: var(--white);
   }
 `
 

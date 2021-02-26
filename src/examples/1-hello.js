@@ -1,7 +1,7 @@
 import React from 'react'
 
-const HelloPage = () => {
-  return <div>First Component</div>
+const Hello = () => {
+  return <section className='page-container'>First Component</section>
 }
 
-export default HelloPage
+export default Hello
